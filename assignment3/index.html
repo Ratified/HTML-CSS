@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/ce2d94b0f6.js" crossorigin="anonymous"></script>
+    <title>Order Summary</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="nav">
+            <img src="./logo.jpg" alt="Logo" class="logo">
+
+            <ul>
+                <li>Home</li>
+                <li>Shop</li>
+                <li>Contact</li>
+                <li>Help</li>
+            </ul>
+
+            <div>
+                <ul>
+                    <li>Account</li>
+                </ul>
+                <p><i class="fa-solid fa-bag-shopping"></i> 3 items</p>
+                <img src="./profile.jpeg" alt="Profile Picture" class="profile-pic">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card" id="account-details">
+            <div class="breadcrumps">
+                <p>Account</p>
+                <p>-<i class="fa-solid fa-check"></i>-</p>
+                <p>Shipping</p>
+                <p>-<i class="fa-solid fa-check"></i>-</p>
+                <p>Payment</p>
+            </div>
+            <h2 class="account_h2">Account Details</h2>
+            <form class="my-form">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="buttons">
+                    <a href="">Register for account</a>
+                    <a href="" class="btn login">Login</a>
+                </div>
+            </form>
+            <hr>
+            <div class="cancel-shipping">
+                <a href="">Cancel Order</a>
+                <a href="" class="btn">Shipping Details</a>
+            </div>
+        </section>
+
+        <section class="card" id="order-summary">
+            <h2>Order Summary</h2>
+            <img class="headphones" src="./headphones.jpeg" alt="Headphones Image">
+
+            <div class="order-description">
+                <div class="order-description_name-price">
+                    <h2 class="product-name">Sony wireless headphones</h2>
+                    <p class="product-price">$320.45</p>
+                </div>
+                <div class="order-description_quantity">
+                    <i class="fa-solid fa-minus" data-type="primary"></i> 1 <i class="fa-solid fa-plus" data-type="primary"></i>
+                </div>
+            </div>
+
+            <p class="gift-card-text">Gift Card / Discount Rate</p>
+
+            <div class="coupon">
+                <input type="text" class="coupon-input">
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <div class="product-details">
+                <div class="product-detail product-details_subtotal">
+                    <p>Subtotal</p>
+                    <p class="bold">$316.45</p>
+                </div>
+                <div class="product-detail product-details_tax">
+                    <p>Tax</p>
+                    <p class="bold">$3.45</p>
+                </div>
+                <div class="product-detail product-details_shipping">
+                    <p>Shipping</p>
+                    <p class="free">Free</p>
+                </div>
+                <div class="product-detail product-details_total">
+                    <p class="bold">Total</p>
+                    <p>$320.45</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
